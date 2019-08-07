@@ -1,7 +1,10 @@
 package com.config;
 
+import org.springframework.context.MessageSource;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -46,5 +49,13 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
     	registry.addViewController("/").setViewName("index");
     	registry.addViewController("/main").setViewName("index");
+    }
+    
+    @Bean
+    public MessageSource messageSource() { // 반드시 messageSource() 로 지정하여야 작동한다
+    	ResourceBundleMessageSource rbms = new ResourceBundleMessageSource();
+    	rbms.setBasenames("message.label");
+    	rbms.setDefaultEncoding("UTF-8");
+    	return rbms;
     }
 }
