@@ -13,7 +13,9 @@ import org.springframework.web.servlet.DispatcherServlet;
 public class Initializer implements WebApplicationInitializer {
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-		System.out.println("Initializer ativate");
+		/* set profiles
+		 * servletContext.setInitParameter("spring.profiles.active", "real"); 
+		 */
 		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
 		context.setServletContext(servletContext);
 		context.setConfigLocation("com.config");

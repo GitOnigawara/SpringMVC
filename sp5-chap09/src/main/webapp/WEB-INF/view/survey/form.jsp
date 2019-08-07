@@ -25,9 +25,9 @@
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
-			<p>응답자 위치</p>
+			<p>location</p>
 			<input type="text" name="res.location" />
-			<p>응답자 나이</p>
+			<p>age</p>
 			<input type="text" name="res.age" />
 			<br /><br />
 			<input type="submit" value="제출" />

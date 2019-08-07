@@ -11,7 +11,7 @@
 		<h2>설문 결과</h2>
 		<ul>
 			<c:forEach var="response" items="${answer.responses}" varStatus="status">
-			<li>${status.count}번 문항: ${response}</li>
+			<li>Answer${status.count} : ${response}</li>
 			</c:forEach>
 		</ul>
 		<p>응답자 위치: ${answer.res.location}</p>

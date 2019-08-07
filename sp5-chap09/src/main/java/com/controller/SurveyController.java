@@ -31,9 +31,9 @@ public class SurveyController {
 	}
 	
 	private List<Question> createQuestions() {
-		Question q1 = new Question("당신의 역할은 무엇입니까?", Arrays.asList("server developer", "front end developer", "back end developer", "full stack developer"));
-		Question q2 = new Question("선호하는 IDE는 무엇입니까?", Arrays.asList("Eclipse", "IntelliJ", "SublimeText", "Visual Studio Code"));
-		Question q3 = new Question("앞으로 하고 싶은것은 무엇입니까?");
+		Question q1 = new Question("what your roll?", Arrays.asList("server", "front-end", "back-end", "full stack"));
+		Question q2 = new Question("favorite IDE?", Arrays.asList("Eclipse", "IntelliJ", "SublimeText", "Visual Studio Code"));
+		Question q3 = new Question("say somthing please");
 		return Arrays.asList(q1, q2, q3);
 	}
 	
