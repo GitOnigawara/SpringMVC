@@ -8,5 +8,7 @@
 </head>
 <body>
 	<a href="/survey">설문참여</a>
+	<br /><br /><br />
+	<a href="/register/step1">회원가입</a>
 </body>
 </html>

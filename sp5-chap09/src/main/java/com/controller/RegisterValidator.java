@@ -11,7 +11,7 @@ import com.command.register.MemberRegister;
 
 public class RegisterValidator implements Validator {
 	
-	private static final String emailRegExp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z] {2,})$";
+	private static final String emailRegExp = "[A-Za-z0-9]+@[A-Za-z0-9]+\\.[A-Za-z0-9]{2,}";
 	private Pattern pattern;
 	
 	public RegisterValidator() {

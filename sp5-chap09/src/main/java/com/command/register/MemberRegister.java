@@ -1,9 +1,20 @@
 package com.command.register;
 
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class MemberRegister {
+	@NotBlank
+	@Email
 	private String email;
+	@NotEmpty
 	private String name;
+	@Size(min = 6)
 	private String password;
+	@NotEmpty
 	private String confirmPassword;
 	
 	public boolean isPasswordEqual() {

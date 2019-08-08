@@ -9,7 +9,7 @@
 	<title><spring:message code="member.register" /></title>
 </head>
 <body>
-	<p><spring:message code="register.done" arguments="${memberRegister.name}, ${memberRegister.email}" /></p>
-	<a href="<c:url value='/index'">[<spring:message code="go.main" />]</a>
+	<p><spring:message code="register.message" arguments="${memberRegister.name}, ${memberRegister.email}" /></p>
+	<a href="<c:url value='/index' />">[<spring:message code="go.main" />]</a>
 </body>
 </html>
