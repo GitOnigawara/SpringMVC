@@ -15,6 +15,7 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.controller.RegisterValidator;
+import com.interceptor.AuthCheckInterceptor;
 import com.interceptor.TestInterceptor;
 
 @Configuration
@@ -38,6 +39,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
     	//registry.addInterceptor(new TestInterceptor()).addPathPatterns("/**").excludePathPatterns("/main");
+    	registry.addInterceptor(new AuthCheckInterceptor()).addPathPatterns("/edit/**");
     }
 	
     // regist formatter
@@ -60,4 +62,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
     	rbms.setDefaultEncoding("UTF-8");
     	return rbms;
     }
+    
 }

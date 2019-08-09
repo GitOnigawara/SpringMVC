@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.command.survey.Answer;
-import com.command.survey.Question;
+import com.model.Answer;
+import com.model.Question;
 
 @Controller
 @RequestMapping("/survey")

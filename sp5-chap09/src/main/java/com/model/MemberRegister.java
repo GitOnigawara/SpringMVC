@@ -1,4 +1,4 @@
-package com.command.register;
+package com.model;
 
 import javax.validation.constraints.Size;
 

@@ -7,7 +7,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import com.command.register.MemberRegister;
+import com.model.MemberRegister;
 
 public class RegisterValidator implements Validator {
 	

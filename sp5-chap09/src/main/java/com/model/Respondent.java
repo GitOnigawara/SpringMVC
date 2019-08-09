@@ -1,4 +1,4 @@
-package com.command.survey;
+package com.model;
 
 public class Respondent {
 	

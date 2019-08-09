@@ -1,4 +1,4 @@
-package com.command.survey;
+package com.model;
 
 import java.util.Collections;
 import java.util.List;
