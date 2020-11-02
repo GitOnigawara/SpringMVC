@@ -35,8 +35,8 @@ public class Connection_Pool extends HttpServlet {
 	private void connectionPool() {
 		try {
 			String url	= "jdbc:oracle:thin:@localhost:1521:orcl";
-			String id	= "onigawara";
-			String pw	= "dbwls12";
+			String id	= "id";
+			String pw	= "pw";
 			ConnectionFactory cf = new DriverManagerConnectionFactory(url, id, pw);			
 			PoolableConnectionFactory pcf = new PoolableConnectionFactory(cf,null);	
 			GenericObjectPoolConfig<PoolableConnection> gopc = new GenericObjectPoolConfig<PoolableConnection>();
